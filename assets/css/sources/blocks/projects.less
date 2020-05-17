@@ -1,0 +1,81 @@
+.projects{
+  background: @color-light-gray;
+  &__header {
+    position: relative;
+    background: @color-bg-purple;
+    text-transform: uppercase;
+    &::before {
+      content: 'Our projects';
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 80rem;
+      height: 12rem;
+      margin: auto;
+      color: @color-light-gray;
+      font: bold 9.6rem "Tahoma", sans-serif;
+    }
+    &::after {
+      //Duplication
+      content: '';
+      position: absolute;
+      z-index: 2;
+      background-color: rgba(116,47,150,0.67);
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+  }
+  &__title {
+    font-size: 3.6rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 3.5rem 0;
+    color: #fff;
+    position: relative;
+    z-index: 3;
+  }
+  &__main {
+    background: @color-light-gray;
+    max-width: 150rem;
+    margin: auto;
+  }
+  &__img-row-1 {
+    width: 50%;
+    img {
+      height: 42.6rem;
+    }
+  }
+  &__img-row-2 {
+    width: 25%;
+    img {
+      height: 32.5rem;
+    }
+  }
+  &__img-row-1, &__img-row-2 {
+    img {
+      width: 100%;
+    }
+  }
+  &__row-1, &__row-2 {
+    display: flex;
+    line-height: 0; //учитывая что img по умолчанию строчно-блоч эл, то по умолчаниею у него есть межстрочный интервал,
+    //котоорый оставляет между изображениями отступы
+  }
+
+  &__footer {
+    text-align: center;
+    background: @color-bg-purple-dark;
+  }
+  &__btn {
+    margin: 2.5rem 0;
+    text-transform: uppercase;
+    border-radius: 1rem;
+    color: #fff;
+    font-weight: bold;
+  }
+}

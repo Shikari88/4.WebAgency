@@ -1,0 +1,39 @@
+.care {
+  &__container {
+    display: flex;
+    justify-content: space-around;
+    padding: 8rem 0;
+    align-items: center;
+  }
+  &__info {
+    width: 55rem;
+    //margin:0 9rem 0 20rem;
+  }
+  &__title {
+    font: bold 3.6rem "HelveticaNeueCyr", sans-serif;
+    margin-bottom: 4.5rem;
+    position: relative;
+    &::before {
+      content: "Be careful";
+      position: absolute;
+      top: -3rem;
+      left: -5rem;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+      color: @color-light-gray;
+      text-transform: uppercase;
+      font: bold 7.7rem "Tahoma",sans-serif;
+    }
+  }
+  &__desc {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+  &__img {
+    width: 48.5rem;
+    img {
+      width: 100%;
+    }
+  }
+}

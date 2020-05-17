@@ -1,0 +1,31 @@
+.about {
+  &__company {
+    display: flex;
+    align-items: center;
+    margin: 17.5rem 0 21.5rem;
+    position: relative;
+    &::before {
+      content: "WE";
+      position: absolute;
+      font: bold 34rem "Tahoma";
+      color: @color-light-gray;
+      z-index: -1;
+      left: 32.5rem;
+      top: auto;
+    }
+  }
+  &__title {
+    width: 40.5rem;
+    font: 700 4.8rem "HelveticaNeueCyr", sans-serif ;
+  }
+  &__text {
+    width: 77rem;
+    font-size: 2rem;
+
+  }
+  &__stages {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20rem;
+  }
+}

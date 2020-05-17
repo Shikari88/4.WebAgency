@@ -1,0 +1,32 @@
+.callback {
+  background: url("./../images/callback-bg.png") no-repeat center/cover;
+  position: relative;
+  &::after {
+    content: '';
+    background-color: rgba(116,47,150,0.67);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  &__container {
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+    padding: 12.5rem 0 14rem 0;
+    position: relative;
+    z-index: 1;
+  }
+  &__info {
+    width: 35rem;
+  }
+  &__title {
+    font: bold 3rem "HelveticaNeueCyr", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 5.5rem;
+  }
+  &__desc {
+    font-size: 1.8rem;
+  }
+}

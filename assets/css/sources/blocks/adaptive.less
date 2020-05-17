@@ -1,0 +1,54 @@
+.adaptive {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 16rem auto;
+    max-width: 150rem;
+  }
+  &__info {
+    width: 55rem;
+    margin:0 9rem 0 20rem;
+  }
+  &__title {
+    font: bold 3.6rem "HelveticaNeueCyr", sans-serif;
+    margin-bottom: 4.5rem;
+    position: relative;
+    &::before {
+      content: "Adaptive";
+      position: absolute;
+      top: -3rem;
+      left: -5rem;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+      color: @color-light-gray;
+      text-transform: uppercase;
+      font: bold 7.7rem "Tahoma",sans-serif;
+    }
+  }
+
+  &__desc {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+  &__img {
+    display: flex;
+    align-items: flex-end;
+  }
+  &__img-iphone {
+    width: 11.6rem;
+  }
+  &__img-ipad {
+    width: 24.4rem;
+    margin: 0 2rem 0 5.5rem;
+  }
+  &__img-macbook {
+    width: 22.1rem;
+  }
+  &__img-iphone, &__img-ipad, &__img-macbook {
+    img {
+      width: 100%;
+    }
+  }
+}

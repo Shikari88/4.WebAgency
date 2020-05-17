@@ -1,0 +1,23 @@
+.btn {
+  display: inline-block;
+  outline: none;
+  text-decoration: none;
+  background: inherit;
+  border: 0;
+  font-size: 2.4rem;
+  vertical-align: middle;
+  line-height: 1;
+  color: inherit;
+  padding: 1.5rem 2.5rem;
+  /*&--orange { // не совсем соответствует Бэм т.к. модификатор говорит о цвете, а описывает прочие парамерты кнопки
+    font-size: 1.8rem;
+    border: 2px solid #fff;
+    padding: 1rem 1.5rem;
+  }*/
+  &--transparent {
+    background: rgba(255, 255, 255, 0.3);
+  }
+  &--orange {
+    background: @color-orange;
+  }
+}

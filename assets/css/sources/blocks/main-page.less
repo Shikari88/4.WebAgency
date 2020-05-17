@@ -1,0 +1,35 @@
+.main-page {
+  background: url("./../images/main-bg.png") center/cover;
+  position: relative;
+  &::after {
+    content: '';
+    background-color: rgba(116,47,150,0.67);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  &__container {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  &__title {
+    font-size: 4.8rem;
+    letter-spacing: 0.3rem;
+    margin: 17.4rem 3rem 2rem;
+  }
+  &__desc {
+    font-size: 2.4rem;
+    margin: 0 27rem 5.7rem;
+  }
+  &__stats {
+    display: flex;
+  }
+
+}

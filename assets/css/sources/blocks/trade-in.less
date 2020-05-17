@@ -1,0 +1,53 @@
+.trade-in {
+  background: url("./../images/trade-in-bg.png");
+  position: relative;
+  &::after{
+    content:'';
+    position: absolute;
+    background: @color-bg-purple;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+  &__container {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    text-align: center;
+
+  }
+  &__title {
+    font-size: 4.8rem;
+    text-transform: uppercase;
+    padding: 5rem 0 7rem 0;
+  }
+  &__item {
+    margin-right: 2rem;
+    width: 39rem;
+  }
+  &__main {
+    display: flex;
+  }
+  &__header {
+    display: flex;
+    align-items: center;
+    height: 7rem;
+    margin-bottom: 1rem;
+    h3 {
+      font-size: 2.6rem;
+      margin-left: 2rem;
+    }
+  }
+  &__desc {
+    font-size: 1.8rem;
+    text-align: left;
+    letter-spacing: 0;
+  }
+  &__btn {
+    width: 32rem;
+    border-radius: 2rem;
+    font: bold 2.4rem "HelveticaNeueCyr", sans-serif;
+    margin: 1.5rem 0 4rem 0;
+  }
+}

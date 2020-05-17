@@ -1,0 +1,56 @@
+.form {
+  width: 60.5rem;
+  &__group {
+    display: flex;
+  }
+  &__fieldset {
+    margin: 0;
+    padding: 0;
+  }
+  &__fieldset, &__control {
+    border: 2px solid #fff;
+  }
+  &__control {
+    padding: 2rem 1.5rem;
+    background-color: transparent;
+    color: #fff;
+    font: 1.8rem "HelveticaNeueCyr", sans-serif;
+    height: 4rem;
+    max-width: 60.5rem;
+    &--md {
+    width: 50%;
+    }
+    &--lg {
+      width: 100%;
+    }
+    &--height-lg{
+      height: 16rem;
+    }
+    &::-moz-placeholder {
+      color: #fff;
+      font-size: 1.8rem;
+      letter-spacing: 1rem;
+    }
+    &::-webkit-input-placeholder {
+      color: #fff;
+      font-size: 1.8rem;
+    }
+  }
+  &__action {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+  }
+  &__text, &__btn {
+    text-transform: uppercase;
+  }
+  &__text {
+    padding-left: 2.5rem;
+    font-size: 1.2rem;
+  }
+  &__btn {
+    border-radius: 1.5rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+}
