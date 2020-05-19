@@ -46,9 +46,11 @@
   }
   &__img-row-1 {
     width: 50%;
+
     img {
       height: 42.6rem;
     }
+
   }
   &__img-row-2 {
     width: 25%;
@@ -57,14 +59,37 @@
     }
   }
   &__img-row-1, &__img-row-2 {
+    margin: 0;
+    position: relative;
     img {
       width: 100%;
+    }
+    figcaption {
+      background: @color-orange;
+      position: absolute;
+      top: 2rem;
+      right: 3rem;
+      bottom: 12rem;
+      left: 3rem;
+      text-align: center;
+      padding-top: 6rem;
+      opacity: 0;
+      transition-duration: 1s;
+      &:hover{
+        opacity: 1;
+        background: rgba(246,174,72,0.9);
+      }
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
     }
   }
   &__row-1, &__row-2 {
     display: flex;
     line-height: 0; //учитывая что img по умолчанию строчно-блоч эл, то по умолчаниею у него есть межстрочный интервал,
     //котоорый оставляет между изображениями отступы
+
   }
 
   &__footer {

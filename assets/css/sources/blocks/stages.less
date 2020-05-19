@@ -1,8 +1,18 @@
 .stages {
 
   &__btn {
-    font-size: 1.8rem;
-    border: 2px solid #fff;
+    border-top: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    border-left: 1px solid;
+    &:hover {
+      background: #F6A623;
+      border: 1px solid #F1F1F1;
+      transition-duration: 1s;
+    }
+    &:active{
+      background: linear-gradient(186deg, rgba(2,0,36,1) 0%, rgba(135,139,140,1) 51%, rgba(0,212,255,1) 100%);
+    }
   }
 
   &__item {
@@ -43,6 +53,10 @@
   }
   &__arrow{
     width: 2.2rem;
+    &:hover {
+      .arrow-lg();//возможно, не стоь продуктивное применение, но как пример применения технологии
+    }
+
     img {
       width: 100%;
     }
