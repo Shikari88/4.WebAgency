@@ -1,8 +1,9 @@
 .offer {
-  width: 36rem;
+
   &__item {
     position: relative;
-    margin-bottom: 4.5rem;
+    //margin-bottom: 4.5rem;
+    width: 29%;
     &::after {
       content: '';
       background: rgba(79,79,79, 0.69);
@@ -52,6 +53,7 @@
   }
   &__btn {
     border:3px solid #fff;
+    background: transparent;
     &--blue {
       border-color: @color-blue;
       &:hover {
@@ -84,11 +86,43 @@
     position: absolute;
     right: -2rem;
     width: 2.2rem;
+    bottom: 1.5rem;
     &:hover {
      .arrow-lg();
     }
     img {
       width: 100%;
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  .offer {
+    &__info {
+      margin: 0;
+      height: 23rem;
+    }
+    &__title {
+      font-size: 3.5rem;
+    }
+    &__item {
+      padding: 1rem 3rem;
+    }
+    &__arrow {
+      right: -4rem;
+      bottom: 1.1rem;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .offer {
+    &__title {
+      font-size: 2.5rem;
+    }
+    &__btn {
+      font-size: 1.3rem;
+    }
+    &__info {
+      height: 20rem;
     }
   }
 }

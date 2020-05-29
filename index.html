@@ -2,21 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Агентство услуг разработки сайтов">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>WebAgency</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <link rel="stylesheet" href="assets/css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;500;700&display=swap" rel="stylesheet">
-
-    <meta name="description" content="Агентство услуг разработки сайтов">
-
 </head>
 <body>
     <main class="main-page">
         <div class="main-page__container container">
-            <h1 class="main-page__title">НАШИ САЙТЫ ЗАСТАВЛЯЮТ РАБОТАТЬ ВАШ БИЗНЕС.</h1>
-            <p class="main-page__desc">Большинство веб-студий считают окончанием работы загрузку
-                сайта в интернет. Но почти никто не умеет делать проекты,
-                которые работают и приносят прибыль.</p>
+            <div class="main-page__text-top">
+                <h1 class="main-page__title">НАШИ САЙТЫ ЗАСТАВЛЯЮТ РАБОТАТЬ ВАШ БИЗНЕС.</h1>
+                <p class="main-page__desc">Большинство веб-студий считают окончанием работы загрузку
+                    сайта в интернет. Но почти никто не умеет делать проекты,
+                    которые работают и приносят прибыль.</p>
+            </div>
             <div class="main-page__stats">
                 <div class="stats stats__item">
                     <div class="stats__img">
@@ -64,13 +67,16 @@
     <section class="about" id="about">
         <div class="about__container container">
             <div class="about__company">
-                <h2 class="about__title">Студия</h2>
-                <p class="about__text">Основная специализация — проектирование сайов и landing page.
-                Наша команда, состоящая из дизайнеров, маркетологов и программистов,
-                поддерживает каждый проект на протяжении всей его жизни. Студия
-                занимается разработкой индивидуального дизайна, оптимизацией
-                скорости работы продукта, предоставляет услуги по продвижению сайтов.
-                </p>
+                <div class="about__inner">
+                    <h2 class="about__title">Студия</h2>
+                    <p class="about__text">Основная специализация — проектирование сайов и landing page.
+                        Наша команда, состоящая из дизайнеров, маркетологов и программистов,
+                        поддерживает каждый проект на протяжении всей его жизни. Студия
+                        занимается разработкой индивидуального дизайна, оптимизацией
+                        скорости работы продукта, предоставляет услуги по продвижению сайтов.
+                    </p>
+                </div>
+
             </div>
             <div class="about__stages stages">
                 <aside class="stages__item">
@@ -80,7 +86,7 @@
                         </div>
                         <h3 class="stages__title">Старт</h3>
                         <div class="stages__text">Вы хотите получать больше клиентов
-                            и прибыли из интернета?С нуля разработаем сайт любой сложности,учитывая индивидуальные особенности вашего бизнеса. Стоимость создания
+                            и прибыли из интернета? С нуля разработаем сайт любой сложности,учитывая индивидуальные особенности вашего бизнеса. Стоимость создания
                             сайта в каждом конкретном случае индивидуальна и рассчитывается исходя из пожеланий и требований клиента
                         </div>
                     </div>
@@ -217,8 +223,8 @@
                         <img src="./assets/images/proj-row-1-1.png" alt="Пример проекта">
                         <figcaption class="project__desc">
                             <a href="./assets/images/proj-row-1-1.png" target="_blank">
-                                <p class="project__title">Инетренет-магазин "Сантехника 555"</p>
-                                <p class="project__text">Посмотреть пример</p>
+                                <span class="project__title">Инетренет-магазин "Сантехника 555"</span>
+                                <span class="project__text">Посмотреть пример</span>
                             </a>
                         </figcaption>
                     </figure>
@@ -226,8 +232,8 @@
                         <img src="./assets/images/proj-row-1-2.png" alt="Пример проекта">
                         <figcaption class="project__desc">
                             <a href="./assets/images/proj-row-1-2.png" target="_blank">
-                                <p class="project__title">Консалтингова контора "Эксперт+"</p>
-                                <p class="project__text">Посмотреть пример</p>
+                                <span class="project__title">Консалтингова контора "Эксперт+"
+                                <span class="project__text">Посмотреть пример</span></span>
                             </a>
                         </figcaption>
                     </figure>
@@ -237,7 +243,7 @@
                         <img src="./assets/images/proj-row-2-1.png" alt="Пример проекта">
                         <figcaption class="project__desc">
                             <a href="./assets/images/proj-row-2-1.png" target="_blank">
-                                <p class="project__text">Посмотреть пример</p>
+                                <span class="project__text">Посмотреть пример</span>
                             </a>
                         </figcaption>
                     </figure>
@@ -245,7 +251,7 @@
                         <img src="./assets/images/proj-row-2-2-1.png" alt="Пример проекта">
                         <figcaption class="project__desc">
                             <a href="./assets/images/proj-row-2-2-1.png" target="_blank">
-                                <p class="project__text">Посмотреть пример</p>
+                                <span class="project__text">Посмотреть пример</span>
                             </a>
                         </figcaption>
                     </figure>
@@ -253,7 +259,7 @@
                         <img src="./assets/images/proj-row-2-3.png" alt="Пример проекта">
                         <figcaption class="project__desc">
                             <a href="./assets/images/proj-row-2-3.png" target="_blank">
-                                <p class="project__text">Посмотреть пример</p>
+                                <span class="project__text">Посмотреть пример</span>
                             </a>
                         </figcaption>
                     </figure>
@@ -261,7 +267,7 @@
                         <img src="./assets/images/proj-row-2-4.png" alt="Пример проекта">
                         <figcaption class="project__desc">
                             <a href="./assets/images/proj-row-2-4.png" target="_blank">
-                                <p class="project__text">Посмотреть пример</p>
+                                <span class="project__text">Посмотреть пример</span>
                             </a>
                         </figcaption>
                     </figure>

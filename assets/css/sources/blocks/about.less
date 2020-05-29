@@ -4,22 +4,29 @@
     align-items: center;
     padding: 17.5rem 0 21.5rem;
     position: relative;
-    &::before {
-      content: "WE";
+    &::after {
+      content: 'WE';
       position: absolute;
-      font: bold 34rem "Tahoma";
+      .heading(34rem, bold);
       color: @color-light-gray;
-      z-index: -1;
+      z-index: 1;
       left: 32.5rem;
-      top: auto;
+      bottom: auto;
     }
+  }
+  &__inner {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
   }
   &__title {
     width: 40.5rem;
-    font: 700 4.8rem "HelveticaNeueCyr", sans-serif ;
+    .heading(4.8rem, 700);
   }
   &__text {
-    width: 77rem;
+    margin-left: 24rem;
+    margin-right: 7.9rem;
     font-size: 2rem;
 
   }
@@ -27,5 +34,29 @@
     display: flex;
     justify-content: space-around;
     margin-bottom: 20rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .about {
+    &__text {
+      margin-left: 8rem;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .about {
+    &__company {
+      padding-bottom: 10rem;
+      &::after {
+        left: 20rem;
+        font-size: 28rem;
+      }
+    }
+
+    &__stages {
+        flex-direction: column;
+        align-items: center;
+    }
+
   }
 }

@@ -3,7 +3,7 @@
   position: relative;
   &::after {
     content: '';
-    background-color: rgba(116,47,150,0.67);
+    background-color: @color-bg-purple;
     position: absolute;
     top: 0;
     left: 0;
@@ -22,7 +22,8 @@
     width: 35rem;
   }
   &__title {
-    font: bold 3rem "HelveticaNeueCyr", sans-serif;
+    .heading(3rem,bold);
+    .font-helvetica;
     text-transform: uppercase;
     margin-bottom: 5.5rem;
   }

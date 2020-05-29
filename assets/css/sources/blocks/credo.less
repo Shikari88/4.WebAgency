@@ -19,12 +19,24 @@
     z-index: 1;
   }
   &__title {
-    font: bold 5rem "Exo2.0", sans-serif;
+    .heading(5rem, bold);
+    .font-exo;
     text-transform: uppercase;
-    margin: 13rem 0 7rem 0;
+    margin: 13rem 0 7rem;
+    @media screen and (max-width: 768px) {
+      font-size: 4rem;
+    }
   }
   &__desc {
-    margin: 0 11.5rem 16rem 11.5rem;
-    font: 2.4rem/2 "HelveticaNeueCyr", sans-serif;
+    margin: 0 11.5rem 16rem;
+    .heading(2.4rem, inherit);
+    .font-helvetica;
+    @media screen and (max-width: 1024px) {
+      letter-spacing: 2px;
+    }
+    @media screen and (max-width: 768px) {
+      margin: 0 2.5rem 16rem;
+      font-size: 2rem;
+    }
   }
 }

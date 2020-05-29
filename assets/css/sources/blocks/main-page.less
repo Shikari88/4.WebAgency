@@ -4,7 +4,7 @@
   display: block;
   &::after {
     content: '';
-    background-color: rgba(116,47,150,0.67);
+    background-color:@color-bg-purple;
     position: absolute;
     top: 0;
     left: 0;
@@ -20,17 +20,25 @@
     align-items: center;
     text-align: center;
   }
+  &__text-top {
+    //width: 124rem; // для IE
+  }
   &__title {
     font-size: 4.8rem;
     letter-spacing: 0.3rem;
-    margin: 17.4rem 3rem 2rem;
+    margin: 17.4rem 2.419% 2rem;
   }
   &__desc {
     font-size: 2.4rem;
-    margin: 0 27rem 5.7rem;
+    margin: 0 21.686% 5.7rem;
+    @media screen and (max-width: 1024px) {
+      margin: 5rem 2.419% 5.7rem;
+    }
   }
   &__stats {
     display: flex;
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
   }
-
 }

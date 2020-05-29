@@ -9,7 +9,7 @@
     width: 57rem;
   }
   &__title {
-    font: bold 3.6rem 'HelveticaNeueCyr', sans-serif;
+    .heading(3.6rem, bold);
     margin-bottom: 5rem;
     position: relative;
     &::before {
@@ -36,5 +36,17 @@
   }
   &__img-google {
     margin-bottom: 3rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .promotion {
+    &__title::before {
+      font-size: 5rem;
+      left: 0;
+    }
+    &__desc {
+      font-size: 1.6rem;
+      padding-right: 1rem;
+    }
   }
 }
