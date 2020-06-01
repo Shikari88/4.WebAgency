@@ -54,8 +54,11 @@
     width: 32rem;
     border-radius: 2rem;
     //.heading(2.4rem, bold);
-    .font-helvetica;
+    font-size: 2.4rem;
+    font-weight: 700;
+    //.font-helvetica;
     margin: 1.5rem 0 4rem 0;
+    text-transform: uppercase;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -73,6 +76,20 @@
     &__btn {
       width: 29rem;
       font-size: 2rem;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .trade-in {
+    &__main {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__header {
+      justify-content: center;
+    }
+    &__item {
+      padding-bottom: 4rem;
     }
   }
 }

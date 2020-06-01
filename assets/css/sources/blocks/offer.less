@@ -115,14 +115,21 @@
 }
 @media screen and (max-width: 768px) {
   .offer {
+    &__item {
+      margin-bottom: 6rem;
+      width: 65%;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
     &__title {
-      font-size: 2.5rem;
+      font-size: 4.5rem;
     }
     &__btn {
-      font-size: 1.3rem;
+      font-size: 2.3rem;
     }
     &__info {
-      height: 20rem;
+      height: 27rem;
     }
   }
 }

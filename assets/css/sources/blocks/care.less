@@ -7,6 +7,7 @@
   }
   &__info {
     width: 55rem;
+    padding: 0 3.3rem;
   }
   &__title {
     .heading;
@@ -26,13 +27,18 @@
       .heading-bg(7.7rem, bold);
       .font-tahoma;
     }
+    @media screen and (max-width: 1024px) {
+        &::before {
+          left: -3rem;
+        }
+    }
   }
   &__desc {
     font-size: 2rem;
     line-height: 1.5;
   }
   &__img {
-    width: 48.5rem;
+    width: 43.5rem;
     img {
       width: 100%;
     }
@@ -42,6 +48,17 @@
   .care {
     &__title::before {
       left: -3rem;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .care {
+    &__title {
+      font-size: 3.8rem;
+      &::before {
+        font-size: 6.7rem;
+        left: -0.3rem;
+      }
     }
   }
 }

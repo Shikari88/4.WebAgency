@@ -22,12 +22,26 @@
     width: 35rem;
   }
   &__title {
-    .heading;
+    font-size: 3rem;
+    font-weight: 700;
     .font-helvetica;
     text-transform: uppercase;
     margin-bottom: 5.5rem;
   }
   &__desc {
     font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .callback {
+    &__container {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__info {
+      width: inherit;
+      text-align: center;
+      padding-bottom: 5rem;
+    }
   }
 }
