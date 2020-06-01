@@ -19,7 +19,7 @@
     z-index: 1;
   }
   &__title {
-    .heading(5rem, bold);
+    .heading;
     .font-exo;
     text-transform: uppercase;
     margin: 13rem 0 7rem;
@@ -29,7 +29,8 @@
   }
   &__desc {
     margin: 0 11.5rem 16rem;
-    .heading(2.4rem, inherit);
+    font-size: 2.4rem;
+    font-weight: inherit;
     .font-helvetica;
     @media screen and (max-width: 1024px) {
       letter-spacing: 2px;
