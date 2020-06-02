@@ -84,6 +84,35 @@
     &__container {
       flex-direction: column;
       align-items: center;
+      text-align: center;
+      margin: 10rem auto;
+    }
+    &__info {
+      margin: 0 2rem;
+    }
+    &__title::before {
+      font-size: 6.5rem;
+    }
+    &__img {
+      margin-top: 5rem;
+      margin-right: 0;
+    }
+    &__img-ipad {
+      display: block;
+      margin: 0 0 0 1rem;
+    }
+  }
+}
+@media screen and (max-width: 425px) {
+  .adaptive {
+    &__title{
+      font-size: 3.8rem;
+    }
+    &__img-ipad {
+      width: 16.4rem;
+    }
+    &__iphon {
+      width: 8.6rem;
     }
   }
 }
