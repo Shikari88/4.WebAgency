@@ -59,3 +59,23 @@
 
   }
 }
+@media screen and (max-width: 425px) {
+  .about {
+    &__inner {
+      flex-direction: column;
+      text-align: center;
+    }
+    &__company {
+      &::after {
+        left: 2rem;
+        font-size: 22rem;
+      }
+    }
+    &__title {
+      width: inherit;
+    }
+    &__text {
+      margin: auto 1rem;
+    }
+  }
+}
