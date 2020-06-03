@@ -53,10 +53,12 @@
       }
     }
     &__stages {
-        flex-direction: column;
-        align-items: center;
+      flex-direction: column;
+      align-items: center;
     }
-
+    &__text {
+      margin-right: 5.4rem;
+    }
   }
 }
 @media screen and (max-width: 425px) {
@@ -94,8 +96,16 @@
     }
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 320px) {
   .about {
-
+    &__title {
+      font-size: 3.5rem;
+    }
+    &__text {
+      font-size: inherit;
+    }
+    &__company::after {
+      font-size: 16rem;
+    }
   }
 }

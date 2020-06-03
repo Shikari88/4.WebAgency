@@ -117,7 +117,7 @@
   .offer {
     &__item {
       margin-bottom: 6rem;
-      width: 65%;
+      width: 68%;
       &:last-child {
         margin-bottom: 0;
       }
@@ -133,7 +133,7 @@
     }
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 425px) {
   .offer {
     &__title {
       font-size: 3.5rem;
@@ -143,6 +143,22 @@
     }
     &__info {
       height: 22rem;
+    }
+  }
+}
+@media screen and (max-width: 320px) {
+  .offer {
+    &__title {
+      font-size: 2.8rem;
+    }
+    &__btn {
+      font-size: 1.3rem;
+    }
+    &__control {
+      padding-top: 3.5rem;
+      &--br-md {
+        padding-top: 5.7rem;
+      }
     }
   }
 }

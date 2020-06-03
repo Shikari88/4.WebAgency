@@ -111,8 +111,35 @@
     &__img-ipad {
       width: 16.4rem;
     }
-    &__iphon {
+    &__iphone {
       width: 8.6rem;
+    }
+  }
+}
+@media screen and (max-width: 375px) {
+  .adaptive {
+    &__info {
+      margin: 0;
+    }
+  }
+}
+@media screen and (max-width: 320px) {
+  .adaptive {
+    &__title{
+      font-size: 2.8rem;
+      &::before {
+        font-size: 5rem;
+      }
+    }
+    &__desc {
+      font-size: inherit;
+      padding: 0 2rem;
+    }
+    &__img-ipad {
+      width: 14.4rem;
+    }
+    &__img-iphone {
+      width: 6.6rem;
     }
   }
 }
