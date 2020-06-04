@@ -80,6 +80,7 @@
       a {
         text-decoration: none;
         color: #fff;
+        display: inline-block;
       }
     }
   }
@@ -130,12 +131,12 @@
     }
     &__img-row-1 {
       img {
-        height: 22.5rem;
+        height: 39.5rem;
       }
     }
     &__img-row-2 {
       img {
-        height: 16.5rem;
+        height: 27.5rem;
       }
     }
   }
@@ -163,6 +164,17 @@
     }
     &__title {
       padding-bottom: 2.5rem;
+    }
+  }
+}
+@media screen and (max-width: 375px) {
+  .projects{
+    &__header::before {
+      font-size: 3.6rem;
+    }
+    &__title {
+      font-size: 3rem;
+      padding: 3rem 0;
     }
   }
 }
